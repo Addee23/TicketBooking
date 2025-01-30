@@ -3,7 +3,7 @@ namespace TicketBookingCore
 {
     public class TicketBookingRequestProcessor
     {
-        public TicketBookingRequestProcessor()
+        public TicketBookingRequestProcessor(ITicketBookingRepository ticketBookingRepository)
         {
         }
 
@@ -21,7 +21,5 @@ namespace TicketBookingCore
                 Email = request.Email
             };
         }
-
     }
-
 }
